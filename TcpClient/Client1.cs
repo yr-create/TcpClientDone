@@ -28,6 +28,7 @@ namespace TcpClient
         private void button1_Click(object sender, EventArgs e)
         {
             button1.Enabled = false;
+            // ok?
             //var responce = tcp.StartClient(txtIpaddress.Text, int.Parse(txtPort.Text), txtSendData.Text);
             var responce = tcp.StartClient("10.128.61.30", 1024, textBox1.Text);
             MessageBox.Show(responce);
